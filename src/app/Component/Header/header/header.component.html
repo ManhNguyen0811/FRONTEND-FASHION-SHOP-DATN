@@ -1,0 +1,85 @@
+<nav class="navbar navbar-expand-lg navAll" >
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">BRAND</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <!-- Tầng 1 -->
+                <li style="margin-left: 390px;"></li>
+
+
+                <li class="nav-item dropdown"    >
+                    <a class="nav-link dropdown-toggle tabs" routerLink="/product" role="button"  >
+                     NAM
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- Tầng 2 -->
+
+                        <li class="dropdown-submenu"  >
+                            <a class="dropdown-item "  > </a>
+                            <ul class="dropdown-menu" >
+                                <!-- Tầng 3 -->
+                                <li  >
+                                    <a  
+                                        class="dropdown-item"   routerLink="/products">
+                                       
+                                     </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                    </ul>
+
+
+                </li>
+
+
+
+                 
+              <li class="nav-item dropdown" style="margin-left: 350px;">
+                <a class="nav-link tabs" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-regular fa-user"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <!-- Hiển thị khi người dùng chưa đăng nhập -->
+                  <li class="nav-item"  >
+                    <a class="dropdown-item" routerLink="/login">Đăng Nhập</a>
+                  </li>
+                  <li class="nav-item"  >
+                    <a class="dropdown-item" routerLink="/signin">Đăng Ký</a>
+                  </li>
+
+                  <!-- Hiển thị khi người dùng đã đăng nhập -->
+                  <li class="nav-item"  >
+                    <a class="dropdown-item" routerLink="/profile">Hồ Sơ</a>
+                  </li>
+                  <li class="nav-item"  >
+                    <a class="dropdown-item"  >Đăng Xuất</a>
+                  </li>
+                </ul>
+              </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link tabs" routerLink="/wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                </li>
+                <li class="nav-item " style="padding-right: 90px;">
+                    <a class="nav-link tabs position-relative" routerLink="/cart">
+                       <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                     2
+                        </span>
+
+                      <i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+
+                <!-- Các mục khác... -->
+            </ul>
+        </div>
+    </div>
+</nav>
