@@ -1,85 +1,43 @@
-<nav class="navbar navbar-expand-lg navAll" >
-    <div class="container-fluid">
-        <a class="navbar-brand" routerLink="/">BRAND</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <!-- Tầng 1 -->
-                <li style="margin-left: 390px;"></li>
-
-
-                <li class="nav-item dropdown"    >
-                    <a class="nav-link dropdown-toggle tabs" routerLink="/product" role="button"  >
-                     NAM
-                    </a>
-                    <ul class="dropdown-menu">
-                        <!-- Tầng 2 -->
-
-                        <li class="dropdown-submenu"  >
-                            <a class="dropdown-item "  > </a>
-                            <ul class="dropdown-menu" >
-                                <!-- Tầng 3 -->
-                                <li  >
-                                    <a  
-                                        class="dropdown-item"   routerLink="/products">
-                                       
-                                     </a>
-                                </li>
-                            </ul>
-                        </li>
-
-
-
-                    </ul>
-
-
-                </li>
-
-
-
-                 
-              <li class="nav-item dropdown" style="margin-left: 350px;">
-                <a class="nav-link tabs" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-regular fa-user"></i>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <!-- Hiển thị khi người dùng chưa đăng nhập -->
-                  <li class="nav-item"  >
-                    <a class="dropdown-item" routerLink="/login">Đăng Nhập</a>
-                  </li>
-                  <li class="nav-item"  >
-                    <a class="dropdown-item" routerLink="/signin">Đăng Ký</a>
-                  </li>
-
-                  <!-- Hiển thị khi người dùng đã đăng nhập -->
-                  <li class="nav-item"  >
-                    <a class="dropdown-item" routerLink="/profile">Hồ Sơ</a>
-                  </li>
-                  <li class="nav-item"  >
-                    <a class="dropdown-item"  >Đăng Xuất</a>
-                  </li>
-                </ul>
-              </li>
-
-                <li class="nav-item ">
-                    <a class="nav-link tabs" routerLink="/wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </a>
-                </li>
-                <li class="nav-item " style="padding-right: 90px;">
-                    <a class="nav-link tabs position-relative" routerLink="/cart">
-                       <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                     2
-                        </span>
-
-                      <i class="fa-solid fa-cart-shopping"></i></a>
-                </li>
-
-                <!-- Các mục khác... -->
-            </ul>
-        </div>
+<header class="position-absolute w-100 py-2">
+  <div class="container-fluid d-flex align-items-center justify-content-around ">
+    <!-- Logo -->
+    <div class="logo" style="width: 157.57px;">
+      <h5 class="text-white">BRAND</h5>
     </div>
-</nav>
+    <!-- Navigation -->
+    <ul class="nav nav-underline d-none d-md-flex">
+      <li class="nav-item">
+        <a class="head-title nav-link text-white" href="#">NỮ</a>
+      </li>
+      <li class="nav-item">
+        <a class="head-title nav-link text-white" href="#">NAM</a>
+      </li>
+      <li class="nav-item">
+        <a class="head-title nav-link text-white" href="#">TRẺ EM</a>
+      </li>
+
+    </ul>
+    <!-- Icons -->
+    <div class="d-flex align-items-center">
+      <!-- Dropdown Menu -->
+      <div class="dropdown">
+        <button class="head-icon head-icon-global btn text-white mx-2 dropdown-toggle no-focus no-caret" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-globe"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-custom">
+          <li><a class="dropdown-item" href="#">English</a></li>
+          <li>
+            <a class="dropdown-item active" href="#">
+              <span>Tiếng Việt</span>
+              <i class="bi bi-check2"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Other Icons -->
+      <a href="#" class="head-icon text-white mx-2"><i class="bi bi-heart"></i></a>
+      <a href="#" class="head-icon text-white mx-2"><i class="bi bi-cart"></i></a>
+    </div>
+
+  </div>
+</header>
