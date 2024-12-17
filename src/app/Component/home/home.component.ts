@@ -1,22 +1,29 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'] // Đổi từ `styleUrl` sang `styleUrls`
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   ngOnInit(): void {
-    this.handleScroll(); // Gọi xử lý ban đầu khi load trang
+    // Kiểm tra môi trường trình duyệt
+    if (isPlatformBrowser(this.platformId)) {
+      this.handleScroll(); // Gọi xử lý ban đầu khi load trang
+    }
   }
 
   // Lắng nghe sự kiện scroll trên toàn bộ cửa sổ
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
-    this.handleScroll();
+    if (isPlatformBrowser(this.platformId)) {
+      this.handleScroll();
+    }
   }
 
   handleScroll(): void {
