@@ -1,121 +1,110 @@
-.navAll{
-    z-index: 3;
-    justify-content: center; /* Canh giữa thanh điều hướng */
-    align-items: center;     /* Căn chỉnh theo chiều dọc */
-    width: 100%;     
-    width: auto;
-    background-color: rgb(140, 62, 62,0);
-    border-bottom: 1px solid rgb(218, 218, 218);
-    position: absolute;
+/* Header Styles */
+header {
+  background-color: transparent; /* Background trong suốt */
+  z-index: 1030; /* Đảm bảo header nằm trên */
 }
 
-.navbar-brand {
-
-    font-size: 30px;
-    margin-left: 135px;
-    font-family: "Kanit", sans-serif;
-    font-weight:bold ;
-}
-.nav-item a{
-    color: black;
-    font-weight: bolder;
-}
-.nav-link  i{
-   
-    margin-left: 27px;
-    font-size: 20px;
-}
- 
-.dropdown-menu li{
-   
-    border-bottom: 1px solid wheat ;
-    // margin-top: -10px;
-    // margin-bottom: -10px;
-   margin-left: 8px;
- 
-
-   
-  
-}
-.dropdown-menu li a{
-    color: white;
-    padding-top: 15px;
-    height: 50px;
-       
-   }
-.dropdown-menu {
-  
-    background-color: black;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
-    border: none;
-    font-family: "Kanit", sans-serif;
-    display: none;
-    position: absolute;
-    left: 0%;
-    top: 80%;
-     
-}
-.dropdown-submenu ul{
-    background-color: aqua;
- }
-
-.dropdown-submenu .dropdown-menu {
-    left: 100%;
-    top: 20%;
-    margin-top: -5px;
- 
-}
-.nav-item:hover > .dropdown-menu {
- 
- 
-    display: block; /* Hiển thị tầng 1 khi di chuột vào */
-}
-.nav-item:hover > .dropdown-menu li a{
-    color: rgb(255, 255, 255);
-}
- 
-  
- 
-.dropdown-submenu:hover > .dropdown-menu{
-   
-    display: block; /* Hiển thị tầng 2 khi di chuột vào */
-}
-.dropdown-submenu:hover > .dropdown-menu a{
-   
-   color: black;
-}
-.dropdown-menu li a:hover {
-    color: #ffcc00; /* Màu chữ khi hover vào */
-    background-color: #333333; /* Màu nền khi hover vào */
-}
-.nav-item:hover > .dropdown-menu {
-   
-    background-color: #000000; /* Màu nền cho dropdown tầng 1 khi hover vào nav-item */
-}
-.dropdown-submenu:hover > .dropdown-menu {
-    background-color:   #000000; /* Màu nền cho dropdown tầng 2 khi hover vào */
+/* Gạch chân màu trắng mặc định của nav-underline */
+.nav-underline .nav-link {
+  color: #fff; /* Chữ màu trắng */
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
-.dropdown-submenu:hover > .dropdown-menu a {
-    color: #bb8739; /* Màu chữ cho dropdown tầng 2 khi hover vào */
-}
-.dropdown-item-link-tang2:hover {
-    color: #000; /* Màu chữ đen khi hover vào */
-    background-color: #eeeeee; /* Màu nền khi hover vào */
-}
-.tabs{
-    transition: transform 0.9s ease, box-shadow 0.9s ease,
-     background-color 0.9s ease;
-    color: #000000;
+
+.nav-underline .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
 }
 
-.tabs:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
-    // background-color: #eff1f3; 
-    /* Màu nền mới khi hover */
-    border-radius: 6px;
-    color: #82bad1  !important;
+/* Ẩn dấu tam giác trong dropdown */
+.no-caret::after {
+  display: none !important;
+}
+
+.head-icon-global {
+  padding: 0px !important;
+  margin: 0.5rem !important;
+  border: 0px !important;
+}
+
+/* Loại bỏ border và shadow khi focus hoặc active */
+.no-focus:focus,
+.no-focus:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Dropdown Menu Custom */
+.dropdown-custom {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 12rem;
+
+}
+
+
+/* Dropdown Item */
+.dropdown-custom .dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu .dropdown-custom{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+.dropdown-custom .dropdown-item.active {
+  background-color: #fff; /* Nền trắng */
+  color: #000; /* Chữ đen */
+  font-weight: bold;
+}
+
+.dropdown-custom .dropdown-item.active i {
+  color: #000; /* Màu của icon check */
+}
+
+.dropdown-custom .dropdown-item:hover {
+  background-color: #f8f9fa; /* Màu xám nhạt khi hover */
+}
+
+
+
+.bi {
+  font-size: 1.5rem; /* Icon size */
+  color: #fff; /* Icon màu trắng */
+}
+
+.head-icon .bi:hover{
+  color: rgb(123, 123, 123);
+}
+
+.head-icon .bi{
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.head-title{
+  font-size: 1.1rem;
+  margin-right: 5rem;
+}
+
+header img {
+  cursor: pointer; /* Biến con trỏ thành pointer khi hover vào logo */
 }
