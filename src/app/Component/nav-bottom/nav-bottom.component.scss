@@ -1,0 +1,112 @@
+
+/* Bottom Navigation Styling */
+.bottom-navigation {
+  width: 100%;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* Transparent Nav */
+  z-index: 9999; /* Cao hơn dropdown */
+}
+
+/* Bottom Navigation Icon */
+.bottom-navigation-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* White Background */
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #000; /* Black Icon */
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* Cao hơn dropdown */
+}
+
+/* Larger Search Button */
+.bottom-navigation-icon-wrapper-center {
+  width: 63px;
+  height: 63px;
+}
+
+.gap-5 {
+  gap: 9.8rem !important;
+}
+
+.px-5 {
+  padding-right: 11rem !important;
+  padding-left: 11rem !important;
+}
+
+.nav-icon.active {
+  background-color: #000; /* Nền đen */
+  color: #fff; /* Màu icon trắng */
+}
+
+.X-icon{
+  font-weight: 50;
+}
+
+/* Category Images */
+.fullscreen-dropdown img {
+  object-fit: contain;
+}
+
+/* Fullscreen Dropdown */
+.fullscreen-dropdown {
+  position: fixed; /* Cố định ở toàn màn hình */
+  bottom: 0; /* Bắt đầu từ phía dưới */
+  left: 0;
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
+  height: -120%; /* Trừ chiều cao của bottom nav (112px) */
+  background-color: #fff; /* Nền trắng */
+  z-index: 8888; /* Dưới 3 nút */
+  overflow-y: auto; /* Cuộn khi nội dung quá dài */
+  padding: 50px 20px; /* Khoảng cách nội dung */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Search Bar Styling */
+.fullscreen-dropdown input {
+  width: 80%;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Nút Close Icon */
+.nav-icon.active {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  bottom: calc(112px / 2); /* Canh giữa với chiều cao của bottom nav */
+  left: 50%; /* Đặt nút chính giữa */
+  transform: translate(-50%, 50%); /* Canh chỉnh cho chuẩn xác */
+  width: 63px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000; /* Nền đen */
+  color: #fff; /* Icon trắng */
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+  z-index: 9999; /* Đảm bảo nằm trên cùng */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
