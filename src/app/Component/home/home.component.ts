@@ -29,7 +29,6 @@ export class HomeComponent implements OnInit {
   handleScroll(): void {
     const carouselItems = document.querySelectorAll<HTMLDivElement>(".carousel-item");
     const scrollPosition = window.scrollY;
-
     carouselItems.forEach((item, index) => {
       const offset = index * window.innerHeight; // Tính vị trí của từng item
 
