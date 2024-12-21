@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {NgClass} from '@angular/common';
 import { CommonModule } from '@angular/common';
 import {HeaderComponent} from "../header/header.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bottom',
@@ -9,7 +10,8 @@ import {HeaderComponent} from "../header/header.component";
   imports: [
     NgClass,
     CommonModule,
-    HeaderComponent
+    HeaderComponent,
+    RouterLink
   ],
   templateUrl: './nav-bottom.component.html',
   styleUrl: './nav-bottom.component.scss'
