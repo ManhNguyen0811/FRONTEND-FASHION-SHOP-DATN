@@ -1,7 +1,5 @@
 /* Header Styles */
 header {
- 
-  
   background-color: transparent; /* Background trong suốt */
   z-index: 1030; /* Đảm bảo header nằm trên */
 }
@@ -109,4 +107,15 @@ header {
 
 header img {
   cursor: pointer; /* Biến con trỏ thành pointer khi hover vào logo */
+}
+
+/* Header for other pages */
+.header-other {
+  background-color: #fff; /* Nền trắng */
+  color: #000; /* Chữ đen */
+}
+
+.header-home {
+  background-color: transparent; /* Nền trong suốt */
+  color: #fff; /* Chữ trắng */
 }

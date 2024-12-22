@@ -29,6 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
+  cursor: pointer;
 }
 
 .carousel-item img {
@@ -46,7 +47,7 @@ body {
   ;
 }
 .carousel-logo   {
- 
+
   object-fit: contain;
   width: 4rem;
   height: 1.2rem;

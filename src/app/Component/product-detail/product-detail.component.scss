@@ -1,0 +1,80 @@
+.product-details {
+  background-color: #fff;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.badge {
+  font-size: 1rem;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+button {
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.sticky-top {
+  top: 4rem;
+}
+
+
+/* Bố cục của product-name */
+.product-name {
+  display: flex; /* Sử dụng flexbox */
+  justify-content: space-between; /* Căn đều hai đầu */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 3rem;
+}
+
+/* Tên sản phẩm */
+.product-title {
+  font-size: 1rem; /* Kích thước chữ */
+  color: #000; /* Màu chữ */
+  margin: 0; /* Xóa margin mặc định */
+  flex: 1; /* Chiếm toàn bộ không gian còn lại */
+  line-height: 1.2; /* Khoảng cách dòng */
+  white-space: normal; /* Cho phép xuống dòng */
+}
+
+/* Nút hành động */
+.action-buttons {
+  display: flex; /* Hiển thị ngang */
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+/* Nút Icon */
+.btn-icon {
+  background: none; /* Nền trong suốt */
+  cursor: pointer; /* Con trỏ dạng tay */
+  font-size: 1.5rem; /* Kích thước icon */
+  color: #000000; /* Màu icon mặc định */
+  display: flex; /* Hiển thị dạng flex */
+  align-items: center; /* Căn giữa icon */
+  justify-content: center; /* Căn giữa icon */
+  font-weight: 100;
+}
+
+.btn-icon:hover {
+  color: #555; /* Màu khi hover */
+}
+
+.fa-arrow-up-from-bracket {
+  font-size: 1rem; /* Kích thước nhỏ hơn */
+}
+
+.fa-heart {
+  font-size: 1rem; /* Kích thước nhỏ hơn */
+}
+
+
+
