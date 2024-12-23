@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./Component/header/header.component";
 import { FooterComponent } from "./Component/footer/footer.component";
 import { HomeComponent } from './Component/home/home.component';
@@ -10,6 +10,8 @@ import { CartComponent } from './Component/cart/cart.component';
 import { LoginComponent } from './Component/login/login.component';
 import { SigninComponent } from './Component/signin/signin.component';
 import { ForgotPasswordComponent } from './Component/forgot-password/forgot-password.component';
+import { ProfileComponent } from './Component/profile/profile.component';
+import { OrderHistoryComponent } from './Component/profile/order-history/order-history.component';
 
 
 
@@ -20,7 +22,7 @@ import { ForgotPasswordComponent } from './Component/forgot-password/forgot-pass
     FooterComponent,HomeComponent,
     ProductComponent, NavBottomComponent,
     CartComponent,LoginComponent, SigninComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent, ProfileComponent, OrderHistoryComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

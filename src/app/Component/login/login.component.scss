@@ -31,17 +31,21 @@
 }
 
 .login-box {
+  border: 1px solid #dadada;
+
   background-color: rgba(255, 255, 255, 0.6);
   min-width: 320px;
   display: flex;
 }
 .login-box-form{
+
   padding: 20px;
-  flex: 7;
+  flex: 6;
 }
 .login-box-signin{
+
  padding: 0 20px 0 0 ;
-  flex: 3;
+  flex: 4;
 }
 
 

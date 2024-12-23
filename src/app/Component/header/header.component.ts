@@ -15,7 +15,7 @@ export class HeaderComponent {
   constructor(private router: Router) {
     // Kiểm tra nếu đường dẫn hiện tại là "/"
     this.router.events.subscribe(() => {
-      this.isHome = this.router.url === '/';
+      this.isHome = this.router.url === '/'  ;
     });
   }
 }

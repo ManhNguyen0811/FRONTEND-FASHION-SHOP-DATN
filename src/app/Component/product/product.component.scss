@@ -9,6 +9,8 @@
 }
 
 .content-box {
+    padding: 70px 0 60px 0;
+    margin-bottom: 50px;
     z-index: 10;
 }
 
@@ -45,7 +47,7 @@
     width: 100%;
     display: flex;
     overflow-x: auto;
-    justify-content: space-around;
+    justify-content: start;
     scroll-behavior: smooth;
     white-space: nowrap;
     scrollbar-width: thin;
@@ -152,7 +154,7 @@ input {
     flex-wrap: wrap;
     // background-color: aqua;
     justify-content: left;
-    gap: 2.6%;
+    gap: 2.2%;
 }
 
 .product-item {
