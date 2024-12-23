@@ -28,6 +28,129 @@
           <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/456261/sub/goods_456261_sub23_3x4.jpg?width=369" alt="Jacket Front" class="img-fluid rounded">
         </div>
       </div>
+
+      <div class="accordion mt-4" id="productAccordion">
+        <h5 class="fw-bold">Mô tả</h5>
+        <p class="text-muted">Mã sản phẩm: 465748</p>
+        <hr>
+        <!-- Chi tiết -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingDetails">
+            <button
+              class="accordion-button"
+              type="button"
+              [class.collapsed]="!isDetailsOpen"
+              (click)="toggleAccordion('details')"
+              [attr.aria-expanded]="isDetailsOpen"
+              aria-controls="collapseDetails"
+            >
+              Chi tiết
+            </button>
+          </h2>
+          <div
+            id="collapseDetails"
+            class="accordion-collapse collapse"
+            [class.show]="isDetailsOpen"
+            aria-labelledby="headingDetails"
+          >
+            <div class="accordion-body">
+              <div class="details-content" data-test="overview-accordion-content">
+                - Vải 'AIRism' mịn màng. <br />
+                - Với công nghệ DRY khô nhanh, Cool Touch, chống tia cực tím và các chức năng khử mùi. <br />
+                - Được làm bằng polyester tái chế. <br />
+                - Thiết kế bỏ túi. <br />
+                - Dây rút được thêm vào để điều chỉnh nón áo. <br />
+                - Chiều dài được thay đổi cho kiểu dáng thoải mái. <br />
+                - Được thiết kế để có thể đóng gói từ túi phía sau, vì vậy nó dễ dàng nằm gọn trong túi xách của bạn. <br />
+                - Thích hợp cho các hoạt động thể thao, giải trí hoặc mặc hằng ngày. <br />
+                - UPF50+.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chất liệu / Cách chăm sóc -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCare">
+            <button
+              class="accordion-button"
+              type="button"
+              [class.collapsed]="!isCareOpen"
+              (click)="toggleAccordion('care')"
+              [attr.aria-expanded]="isCareOpen"
+              aria-controls="collapseCare"
+            >
+              Chất liệu / Cách chăm sóc
+            </button>
+          </h2>
+          <div
+            id="collapseCare"
+            class="accordion-collapse collapse"
+            [class.show]="isCareOpen"
+            aria-labelledby="headingCare"
+          >
+            <div class="accordion-body">
+              <div class="details-content" data-test="overview-accordion-content">
+                Mã sản phẩm 465748,462665,456261
+                Xin lưu ý mã số nhận diện của sản phẩm có thể có sự khác biệt, kể cả khi đó là cùng một mặt hàng.
+                Vải
+                Thân: 75% Polyeste, 13% Elastan, 12% Cupro ( 75% Sử Dụng Sợi Polyeste Tái Chế )/ Vải Túi: 100% Polyeste
+                Hướng dẫn giặt
+                Giặt máy nước lạnh, giặt nhẹ, Không giặt khô, Không sấy khô
+                - Những hình ảnh sản phẩm có thể bao gồm Những màu không có sẵn.
+                - Quần áo sử dụng vật liệu tái chế là một phần trong nỗ lực của chúng tôi nhằm hỗ trợ giảm thiểu chất thải và sử dụng vật liệu mới. Tỷ lệ vật liệu tái chế khác nhau tùy theo từng sản phẩm. Vui lòng kiểm tra
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!------------------------------Review-->
+      <div class="container mt-5">
+        <h5 class="fw-bold">Đánh giá</h5>
+        <div class="d-flex align-items-center mb-3">
+          <div class="stars">
+            <ng-container *ngFor="let star of getFullStars(rating)">
+              ★
+            </ng-container>
+            <ng-container *ngFor="let star of getEmptyStars(rating)">
+              ☆
+            </ng-container>
+          </div>
+          <span class="fw-bold ms-2">{{ rating.toFixed(1) }}</span>
+          <a href="#" class="ms-2 text-primary">({{ reviewCount }}+)</a>
+        </div>
+        <hr>
+
+        <!-- Dùng lặp lại cho danh sách đánh giá -->
+        <div *ngFor="let review of reviews" class="review-item mb-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <h6 class="fw-bold">{{ review.title }}</h6>
+            <span class="text-muted">{{ review.date }}</span>
+          </div>
+          <div class="stars text-black mb-2">
+            <ng-container *ngFor="let star of getFullStars(review.rating)">
+              ★
+            </ng-container>
+            <ng-container *ngFor="let star of getEmptyStars(review.rating)">
+              ☆
+            </ng-container>
+          </div>
+          <p class="mb-1">
+            <span class="">Kích cỡ đã mua:</span> {{ review.size }}<br>
+            <span class="">Quần áo có vừa không:</span> {{ review.fit }}
+          </p>
+          <p class="mb-3">
+            {{ review.comment }}
+          </p>
+          <p class="text-muted small">
+            {{ review.user }} · {{ review.gender }} · {{ review.age }} · Chiều cao: {{ review.height }} · Cân nặng: {{ review.weight }} · Cỡ giày: {{ review.shoeSize }} · {{ review.location }}
+          </p>
+        </div>
+        <hr>
+      </div>
+
+
+      <!----------------------------END------------------------------>
     </div>
     <!-- Product Details (Right Section) -->
     <div class="col-md-5">
