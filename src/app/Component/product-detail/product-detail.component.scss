@@ -331,6 +331,46 @@ button {
   text-decoration: none;
   font-size: 0.9rem;
 }
+/*------------------------------ Decripsion */
+/* Tăng khoảng cách dòng và căn chỉnh */
+.details-content {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #333;
+  white-space: pre-wrap;
+}
 
+/* Định dạng cho trạng thái khi được mở */
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff; /* Màu nền nhạt khi mở */
+  color: #000; /* Màu chữ đen */
+  border-color: #ddd; /* Màu viền nhạt */
+  font-weight: bold;
+  box-shadow: none;
+}
+
+/* Định dạng khi đóng */
+.accordion-button.collapsed {
+  background-color: #fff; /* Màu nền trắng */
+  color: #666; /* Màu chữ xám nhạt */
+  border-color: #ddd;
+  font-weight: normal;
+}
+
+/* Tùy chỉnh viền */
+.accordion-item {
+  border: none; /* Loại bỏ viền */
+  border-bottom: 1px solid #ddd; /* Tạo viền dưới */
+}
+
+/* Tăng không gian nội dung */
+.accordion-body {
+  padding: 1rem;
+}
+
+/* Hiệu ứng chuyển đổi */
+.accordion-collapse {
+  transition: height 0.3s ease;
+}
 
 
