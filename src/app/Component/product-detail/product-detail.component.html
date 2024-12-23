@@ -32,6 +32,7 @@
     <!-- Product Details (Right Section) -->
     <div class="col-md-5">
       <div class="product-details sticky-top">
+<!--        product-name-->
         <div class="product-name d-flex align-items-center">
           <!-- Tên sản phẩm -->
           <h3 class="product-title fw-normal">AIrism Áo Hoodie Chống UV Vải Mát Lưới Kéo Khóa</h3>
@@ -48,35 +49,136 @@
             </button>
           </div>
         </div>
-
-
-
-
-
-
-        <p class="text-muted">Màu sắc: <strong>DARK GRAY</strong></p>
-
-        <div class="mb-3">
-          <span class="badge bg-dark me-2">XS</span>
-          <span class="badge bg-dark text-light me-2">S</span>
-          <span class="badge bg-dark me-2">M</span>
-          <span class="badge bg-dark me-2">L</span>
-          <span class="badge bg-dark me-2">XL</span>
+      <div>
+<!--        product-color-->
+        <div class="color-picker mt-3">
+          <dl class="color-picker-list">
+            <!-- Màu trắng -->
+            <div class="color-item" data-test="WHITE">
+              <dt>
+                <input type="radio" value="00" name="product-color-picker" id="product-color-picker0" class="color-input">
+                <label class="color-label" for="product-color-picker0"
+                       style="background-image: url('https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/456261/chip/goods_00_456261_chip.jpg');">
+                </label>
+              </dt>
+            </div>
+            <!-- Màu xám -->
+            <div class="color-item" data-test="GRAY">
+              <dt>
+                <input type="radio" value="03" name="product-color-picker" id="product-color-picker1" class="color-input">
+                <label class="color-label" for="product-color-picker1"
+                       style="background-image: url('https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/456261/chip/goods_03_456261_chip.jpg');">
+                </label>
+              </dt>
+            </div>
+            <!-- Màu đen -->
+            <div class="color-item" data-test="BLACK">
+              <dt>
+                <input type="radio" value="09" name="product-color-picker" id="product-color-picker2" class="color-input">
+                <label class="color-label" for="product-color-picker2"
+                       style="background-image: url('https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/456261/chip/goods_09_456261_chip.jpg');">
+                </label>
+              </dt>
+            </div>
+          </dl>
+          <p class="color-selected">Màu sắc: WHITE</p>
         </div>
-
-        <div class="mb-3">
-          <h4 class="text-danger fw-bold">1.471.000 VND</h4>
-          <div class="input-group mb-3" style="max-width: 150px;">
-            <button class="btn btn-outline-secondary" type="button">-</button>
-            <input type="text" class="form-control text-center" value="1">
-            <button class="btn btn-outline-secondary" type="button">+</button>
+<!--            product-size-->
+        <div class="size-picker">
+          <dl>
+            <div class="size-item" data-test="XS">
+              <dt>
+                <input type="radio" value="00" name="product-color-picker" id="product-size-picker0" class="color-input">
+                <label class="fr-chip-label" for="product-size-picker0" style="background-size: 50px; background-position: center center; width: 36px; height: 36px; display: flex; min-height: 0px; min-width: 0px;">
+                  <span class="fr-chip-text" role="img" aria-label="XS">XS</span>
+                </label>
+              </dt>
+            </div>
+            <div class="size-item" data-test="S">
+              <dt>
+                <input type="radio" value="00" name="product-color-picker" id="product-size-picker1" class="color-input">
+                <label class="fr-chip-label" for="product-size-picker1" style="background-size: 50px; background-position: center center; width: 36px; height: 36px; display: flex; min-height: 0px; min-width: 0px;">
+                  <span class="fr-chip-text" role="img" aria-label="S">S</span>
+                </label>
+              </dt>
+            </div>
+            <div class="size-item" data-test="M">
+              <dt>
+                <input type="radio" value="00" name="product-color-picker" id="product-size-picker2" class="color-input">
+                <label class="fr-chip-label" for="product-size-picker2" style="background-size: 50px; background-position: center center; width: 36px; height: 36px; display: flex; min-height: 0px; min-width: 0px;">
+                  <span class="fr-chip-text" role="img" aria-label="M">M</span>
+                </label>
+              </dt>
+            </div>
+          </dl>
+          <div class="d-flex justify-content-between" style="width: auto;">
+            <p class="hintText hintTextPicker hint-text--color-secondary textAlignLeft text-transform-normal">
+              <span class="">Kích cỡ:
+                <span class="">&nbsp;Nữ&nbsp;</span>S
+              </span>
+            </p>
+            <p class="hintText hintTextPicker hint-text--color-secondary textAlignLeft text-transform-normal">Kích cỡ tham khảo: -</p>
           </div>
-          <button class="btn btn-dark w-100">THÊM VÀO GIỎ HÀNG</button>
+        </div>
+      </div>
+<!--        Kiểm tra kích cỡ-->
+        <div class="text-end mt-2 mb-2">
+          <a href="#" class="check-size-link d-flex align-items-center justify-content-end gap-2 text-dark text-decoration-none">
+            <svg width="24" height="24" viewBox="0 0 24 24" class="icon-size">
+              <path d="M2.4 9.4V17.6H21.6V9.4H2.4ZM20.4 16.4H3.6V10.6H5.45V13H6.55V10.6H8.45V14H9.55V10.6H11.45V13H12.55V10.6H14.45V14H15.55V10.6H17.45V13H18.55V10.6H20.4V16.4Z"></path>
+            </svg>
+            <span class="text-primary">Kiểm tra kích cỡ</span>
+          </a>
+        </div>
+        <!--            Giá SP - Đánh giá chất lượng-->
+        <div class="product-price-review d-flex justify-content-between">
+          <div class="price-container d-flex align-items-center justify-content-between">
+            <div class="product-price">
+              <span class="price">686.000</span>
+              <abbr class="currency" title="Vietnamese dong">VND</abbr>
+            </div>
+          </div>
+          <div class="review-container d-flex align-items-center">
+            <div class="review-stars">
+              <span>★ ★ ★ ★ ★</span>
+            </div>
+            <span class="review-count">(999+)</span>
+          </div>
+        </div>
+        <div class="product-description">
+          <span>Sản phẩm được làm từ chất liệu tái chế</span>
+        </div>
+      <!-- product-quantity-->
+        <div class="product-actions mt-3">
+          <!-- Quantity Selector -->
+          <div class="quantity-selector d-flex align-items-center justify-content-start gap-2">
+            <button class="quantity-btn">-</button>
+            <div class="quantity-value">1</div>
+            <button class="quantity-btn">+</button>
+          </div>
+          <div class="stock-status mt-2">
+            <span>Còn ít hàng</span>
+          </div>
+
+          <!-- Add to Cart Button -->
+          <div class="add-to-cart mt-3">
+            <button class="btn-cart">THÊM VÀO GIỎ HÀNG</button>
+          </div>
+
+          <!-- Find Product in Inventory -->
+          <div class="inventory-check mt-3 text-end">
+            <a href="#" class="link-inventory">Tìm sản phẩm còn hàng trong cửa hàng</a>
+          </div>
         </div>
 
-        <p class="small text-muted">★★★★★ (209)</p>
-        <a href="#" class="small text-decoration-underline">Kiểm tra kích cỡ</a><br>
-        <a href="#" class="small text-decoration-underline">Tìm sản phẩm còn hàng trong cửa hàng</a>
+
+
+
+
+
+
+
+        <!------------------------END--------------------->
       </div>
     </div>
   </div>
