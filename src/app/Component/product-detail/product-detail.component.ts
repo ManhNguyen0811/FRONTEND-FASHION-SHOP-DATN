@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink, RouterOutlet} from '@angular/router';
+import { ReviewsComponent} from '../reviews/reviews.component';
+
 @Component({
   selector: 'app-product-detail',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    RouterLink,RouterOutlet,
+    ReviewsComponent
   ],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss'
