@@ -9,6 +9,7 @@ import { ForgotPasswordComponent } from './Component/forgot-password/forgot-pass
 import { ProfileComponent } from './Component/profile/profile.component';
 import { OrderHistoryComponent } from './Component/profile/order-history/order-history.component';
 import { OrderDetailComponent } from './Component/profile/order-detail/order-detail.component';
+import { ReviewsComponent} from './Component/reviews/reviews.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
