@@ -1,5 +1,9 @@
+<app-header></app-header>
+<div class="overlay" *ngIf="isLoading">
+    <div class="loading-spinner"></div> 
+</div>
 
-  <app-header></app-header>
-  <router-outlet />
-<!--  <app-nav-bottom></app-nav-bottom>-->
-
+<div class="main-content">
+    <router-outlet/>
+</div>
+<app-nav-bottom></app-nav-bottom>
