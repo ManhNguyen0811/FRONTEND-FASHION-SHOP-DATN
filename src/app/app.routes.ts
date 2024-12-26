@@ -12,6 +12,7 @@ import { OrderDetailComponent } from './Component/profile/order-detail/order-det
 import { ReviewsComponent} from './Component/reviews/reviews.component';
 import { animation } from '@angular/animations';
 import { EditProfileComponent } from './Component/profile/edit-profile/edit-profile.component';
+import { EditAddressComponent } from './Component/profile/edit-address/edit-address.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -28,6 +29,8 @@ export const routes: Routes = [
             { path: 'order_history', component: OrderHistoryComponent },
             { path: 'edit_profile', component: EditProfileComponent },
             { path: 'order_history/order_detail', component: OrderDetailComponent  },
+            { path: 'edit_address', component: EditAddressComponent },
+
         ]
     },
 ];

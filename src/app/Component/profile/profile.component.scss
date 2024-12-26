@@ -1,11 +1,10 @@
-body {
-    margin-top: 20px;
-}
-
+ 
 * {
     font-family: "Kanit", sans-serif;
 }
-
+.container{
+    padding-top: 110px;
+}
 .user-info-wrapper {
     position: relative;
     width: 100%;
@@ -201,4 +200,13 @@ a.list-group-item,
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+
+
+
+  @media (max-width:600px) {
+   .container{
+    padding-top: 50px;
+    margin-top: 0px;
+   } 
   }

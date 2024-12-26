@@ -1,4 +1,4 @@
-<div class="container mb-2  " style="padding-top: 110px;">
+<div class="container mb-2">
     <div class="row">
         <div class="col-lg-4">
             <aside class="user-info-wrapper">
@@ -20,10 +20,10 @@
                 </div>
             </aside>
             <nav class="list-group">
-                <a class="list-group-item" routerLink="/profile/edit_profile"  > <i class="fa fa-user"></i>Hồ Sơ</a>
+                <a class="list-group-item" routerLink="/profile/edit_profile"> <i class="fa fa-user"></i>Hồ Sơ</a>
                 <a class="list-group-item with-badge" routerLink="/profile/order_history"><i class=" fa fa-th"></i>Lịch
                     Sử Hóa Đơn <span class="badge badge-primary badge-pill">6</span></a>
-                <a class="list-group-item" href="#"><i class="fa fa-map"></i>Địa Chỉ </a>
+                <a class="list-group-item" routerLink="/profile/edit_address" ><i class="fa fa-map" ></i>Địa Chỉ </a>
                 <!-- <a class="list-group-item with-badge active" href="#"><i class="fa fa-heart"></i>Wishlist<span class="badge badge-primary badge-pill">3</span></a> -->
                 <!-- <a class="list-group-item with-badge" href="#"><i class="fa fa-tag"></i>My Tickets<span class="badge badge-primary badge-pill">4</span></a> -->
             </nav>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="main-content">
-                <router-outlet/>
+                <router-outlet />
             </div>
 
             <!-- <hr class="mb-4">

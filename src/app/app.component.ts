@@ -13,6 +13,7 @@ import { ForgotPasswordComponent } from './Component/forgot-password/forgot-pass
 import { ProfileComponent } from './Component/profile/profile.component';
 import { OrderHistoryComponent } from './Component/profile/order-history/order-history.component';
 import { EditProfileComponent } from './Component/profile/edit-profile/edit-profile.component';
+import { EditAddressComponent } from './Component/profile/edit-address/edit-address.component';
 
 
 
@@ -23,7 +24,9 @@ import { EditProfileComponent } from './Component/profile/edit-profile/edit-prof
     FooterComponent,HomeComponent,CommonModule,
     ProductComponent, NavBottomComponent,
     CartComponent,LoginComponent, SigninComponent,
-    ForgotPasswordComponent, ProfileComponent, OrderHistoryComponent, EditProfileComponent
+    ForgotPasswordComponent, ProfileComponent,
+     OrderHistoryComponent, EditProfileComponent,
+     EditAddressComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
